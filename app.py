@@ -3,7 +3,6 @@ import pickle
 
 app = Flask(__name__)
 
-# Load the trained model and TF-IDF vectorizer
 with open('model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
